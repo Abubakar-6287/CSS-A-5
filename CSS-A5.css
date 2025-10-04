@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.maincar {
+  /* border: 1px solid #000; */
+  position: relative;
+}
+.bilding {
+  /* width: 100%; */
+  width: 100%;
+  z-index: -1;
+  /* border: 5px solid red; */
+  overflow: hidden;
+  display: flex;
+}
+.bildingimg{
+  height: 400px;
+  animation: bilding 23s linear infinite ;
+}
+.sunmarq {
+  position: absolute;
+  top: 10px;
+  /* left: 200px; */
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+  /* background-color: blueviolet; */
+}
+.sunimg {
+  /* width: 100px; */
+  height: 100px;
+  position: absolute;
+  top: 10px;
+
+}
+
+.road {
+  margin-top: -5px;
+  height: 300px;
+  width: 2970px;
+  animation: trans 9s linear  infinite ;
+  /* position: absolute; */
+  /* top: 390px; */
+  left: 0;
+}
+.ghasss{
+  animation: bilding 23s linear infinite ;
+  /* height: 200px; */
+}
+.rod{
+  /* border: 10px solid #000000; */
+  /* background-color: red; */
+  position: relative;
+  top: -10px;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+.car {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+.marqcar {
+  position: absolute;
+  top: 330px;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+.carbox{
+  /* background-color: rgb(214, 214, 76); */
+  position: absolute;
+  top: 320px;
+  width: 800px;
+}
+.weell{
+  display: flex;
+  background-color: rgba(0, 0, 255, 0);
+  position: absolute;
+  top: 127px;
+  left: 150px;
+  width: 575px;
+  justify-content: space-between;
+}
+.section{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body{
+  background-image: url('https://tse1.mm.bing.net/th/id/OIP.c5yHf3zF0j9V6xMG6CwbiwHaD4?cb=12&w=1200&h=630&rs=1&pid=ImgDetMain&o=7&rm=3');
+  z-index: -2;
+  background-size:100% 500px ;
+  background-repeat: no-repeat;
+}
+.wheel2{
+  width: 120px;
+  height: 120px;
+  animation: rotate 0.8s  linear infinite ;
+}
+.ghasimg{
+  display: flex;
+  /* background-color: aqua; */
+  width: 100%;
+  overflow: hidden;margin-top: -150px;
+  
+}
+.ghases{
+  animation: ghases 38s linear infinite ;
+  height: 400px;
+  margin: 0 -40px;
+}
+.jamp{
+  animation:jamp 0.1s ease-in infinite;
+}
+.ghasbottom{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+  display: flex;
+  z-index: -2;
+}
+@keyframes trans {
+  0%{
+    transform: translate(0px);
+  }
+  100%{
+    transform: translate(-4000px);
+  }
+}
+@keyframes jamp {
+  0%{
+    transform: translatey(-1px);
+  }30%{
+    transform: translatey(0px);
+  }
+  100%{
+    transform: translatey(-1px);
+  }
+}
+@keyframes bilding {
+  0%{
+    transform: translate(0px);
+  }
+  100%{
+    transform: translate(-2700px);
+  }
+}@keyframes ghases {
+  0%{
+    transform: translate(0px);
+  }
+  100%{
+    transform: translate(-4700px);
+  }
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
